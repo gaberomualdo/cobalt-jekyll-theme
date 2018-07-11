@@ -41,7 +41,11 @@ layout: default
       <hr>
       {%- endfor -%}
     </section>
-
+  {% else %}
+    <section class="post-list">
+      <h5 class="no-posts-notice">Sorry, there are no posts yet.</h5>
+      <hr>
+    </section>
   {%- endif -%}
 
 </div>

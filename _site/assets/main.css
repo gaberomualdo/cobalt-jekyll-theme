@@ -151,7 +151,10 @@ footer p {
 hr.top-separator {
   margin-bottom: 0;
 }
-section.post-list {
+section.post-list .no-posts-notice{
+  margin: 2.5rem 0;
+  font-size: 2.5rem;
+  text-align: center;
 }
 section.post-list hr {
   margin: 0;
@@ -190,9 +193,16 @@ section.post-list article div.row div.content a {
   display: block;
   clear: both;
   float: left;
+  transition: color 0.25s;
 }
 section.post-list article div.row div.content a:hover svg{
   transform: translate(0.75rem);
+}
+section.post-list article div.row div.content a:hover{
+  color: #27f
+}
+section.post-list article div.row div.content a:hover svg path{
+  fill: #27f;
 }
 section.post-list article div.row div.content a p,section.post-list article div.row div.content a svg {
   display: block;
@@ -207,6 +217,7 @@ section.post-list article div.row div.content a svg {
 }
 section.post-list article div.row div.content a svg path {
   fill: #444;
+  transition: fill 0.25s;
 }
 section.post-list article div.row ul {
   width: 30%;
@@ -226,6 +237,9 @@ section.post-list article div.row ul li svg {
   padding: 0.75rem;
   margin: 0 0.25rem;
   float: left;
+}
+section.post-list article div.row ul li svg path {
+  fill: #27f;
 }
 @media (max-width: 777.77px){
   section.post-list article div.row ul, section.post-list article div.row div.content {
