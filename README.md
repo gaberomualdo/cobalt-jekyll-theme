@@ -52,6 +52,15 @@ To enable Google Analytics, add the following lines to your Jekyll site:
   google_analytics: UA-NNNNNNNN-N
 ```
 
+### FrontMatter in Posts
+
+Posts should have the following variables in their FrontMatter:
+
+ - `layout` &mdash; defines the layout of the page, and should be defined as `post`
+ - `read_time` &mdash; the amount of time the post should take to read, in minutes.
+ - `author` &mdash; the author of the post.
+ - `date` &mdash; the date the post was written and published.
+
 ## License
 
 The theme is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).

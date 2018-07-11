@@ -1,13 +1,13 @@
 title: Cobalt Jekyll Theme
-author: xtrp
+author: Fred Adams
 email: someone@example.com
 description: >
   A simple, minimalistic Jekyll theme.
 
 # social links
 email_link: "mailto:someone@example.com"
-github_link: "https://github.com/xtrp"
-stackoverflow_link: "https://stackoverflow.com/users/10007107/fred-adams"
+github_link: "https://github.com"
+stackoverflow_link: "https://stackoverflow.com"
 
 plugins:
  - jekyll-feed
