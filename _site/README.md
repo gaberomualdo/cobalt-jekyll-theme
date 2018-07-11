@@ -1,6 +1,6 @@
 # Cobalt
 
-*Cobalt a minimalistic, simple Jekyll theme for a blog and personal website.*.
+*Cobalt is a minimalistic, simple Jekyll theme for a blog and personal website.*.
 
 [Theme preview](https://xtrp.github.io/cobalt-jekyll-theme/)
 

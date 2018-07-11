@@ -1,94 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-07-11T22:00:30+01:00</updated><id>http://localhost:4000/</id><title type="html">Cobalt Jekyll Theme</title><subtitle>A simple, minimalistic Jekyll theme.
-</subtitle><author><name>Fred Adams</name></author><entry><title type="html">Cobalt Theme: README file</title><link href="http://localhost:4000/2018/07/11/readme.html" rel="alternate" type="text/html" title="Cobalt Theme: README file" /><published>2018-07-11T00:00:00+01:00</published><updated>2018-07-11T00:00:00+01:00</updated><id>http://localhost:4000/2018/07/11/readme</id><content type="html" xml:base="http://localhost:4000/2018/07/11/readme.html">&lt;h1 id=&quot;cobalt&quot;&gt;Cobalt&lt;/h1&gt;
-
-&lt;p&gt;&lt;em&gt;Cobalt a minimalistic, simple Jekyll theme for a blog and personal website.&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://xtrp.github.io/cobalt-jekyll-theme/&quot;&gt;Theme preview&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/screenshot.png&quot; alt=&quot;Cobalt theme preview&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
-
-&lt;p&gt;Download this Github repository.&lt;/p&gt;
-
-&lt;h3 id=&quot;layouts&quot;&gt;Layouts&lt;/h3&gt;
-
-&lt;p&gt;Refers to files within the &lt;code class=&quot;highlighter-rouge&quot;&gt;_layouts&lt;/code&gt; directory, that define the markup for your theme.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;default.html&lt;/code&gt; — The base layout that lays the foundation for subsequent layouts. The derived layouts inject their contents into this file at the line that says &lt;code class=&quot;highlighter-rouge&quot;&gt;{{ content }}&lt;/code&gt; and are linked to this file via &lt;a href=&quot;https://jekyllrb.com/docs/frontmatter/&quot;&gt;FrontMatter&lt;/a&gt; declaration &lt;code class=&quot;highlighter-rouge&quot;&gt;layout: default&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;home.html&lt;/code&gt; — The layout for your landing-page / home-page / index-page. [&lt;a href=&quot;#home-layout&quot;&gt;More Info.&lt;/a&gt;]&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;page.html&lt;/code&gt; — The layout for your documents that contain FrontMatter, but are not posts.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;post.html&lt;/code&gt; — The layout for your posts.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;includes&quot;&gt;Includes&lt;/h3&gt;
-
-&lt;p&gt;Refers to snippets of code within the &lt;code class=&quot;highlighter-rouge&quot;&gt;_includes&lt;/code&gt; directory that can be inserted in multiple layouts (and another include-file as well) within the same theme-gem.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;footer.html&lt;/code&gt; — Defines the site’s footer section.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;google-analytics.html&lt;/code&gt; — Inserts Google Analytics module.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;head.html&lt;/code&gt; — Code-block that defines the &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;head&amp;gt;&amp;lt;/head&amp;gt;&lt;/code&gt; in &lt;em&gt;default&lt;/em&gt; layout.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;header.html&lt;/code&gt; — Defines the site’s main header section.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;nav.html&lt;/code&gt; — Defines the post layouts top bar.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;assets&quot;&gt;Assets&lt;/h3&gt;
-
-&lt;p&gt;Refers to various asset files within the &lt;code class=&quot;highlighter-rouge&quot;&gt;assets&lt;/code&gt; directory.
-Contains the &lt;code class=&quot;highlighter-rouge&quot;&gt;main.css&lt;/code&gt;, the theme’s main stylesheet called by &lt;code class=&quot;highlighter-rouge&quot;&gt;_layouts/default.html&lt;/code&gt; via &lt;code class=&quot;highlighter-rouge&quot;&gt;_includes/head.html&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;This directory can include sub-directories to manage assets of similar type, and will be copied over as is, to the final transformed site directory.&lt;/p&gt;
-
-&lt;h3 id=&quot;plugins&quot;&gt;Plugins&lt;/h3&gt;
-
-&lt;p&gt;Cobalt comes with &lt;a href=&quot;https://github.com/jekyll/jekyll-seo-tag&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll-seo-tag&lt;/code&gt;&lt;/a&gt; plugin preinstalled to make sure your website gets the most useful meta tags. See &lt;a href=&quot;https://github.com/jekyll/jekyll-seo-tag#usage&quot;&gt;usage&lt;/a&gt; to know how to set it up.&lt;/p&gt;
-
-&lt;h3 id=&quot;home-layout&quot;&gt;Home Layout&lt;/h3&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;home.html&lt;/code&gt; is a flexible HTML layout for the site’s landing-page / home-page / index-page. &lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;enabling-google-analytics&quot;&gt;Enabling Google Analytics&lt;/h3&gt;
-
-&lt;p&gt;To enable Google Analytics, add the following lines to your Jekyll site:&lt;/p&gt;
-
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;na&quot;&gt;google_analytics&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;UA-NNNNNNNN-N&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;frontmatter-in-posts&quot;&gt;FrontMatter in Posts&lt;/h3&gt;
-
-&lt;p&gt;Posts should have the following variables in their FrontMatter:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;layout&lt;/code&gt; — defines the layout of the page, and should be defined as &lt;code class=&quot;highlighter-rouge&quot;&gt;post&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;read_time&lt;/code&gt; — the amount of time the post should take to read, in minutes.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;author&lt;/code&gt; — the author of the post.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;date&lt;/code&gt; — the date the post was written and published.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;title&lt;/code&gt; — the title of the post.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Optional FrontMatter variables that can be used in posts:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;private&lt;/code&gt; — define as true if you’d like the post or page to not be shown in the post feed in the homepage. Note that private pages will still be accessible if the user knows the URL.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;license&quot;&gt;License&lt;/h2&gt;
-
-&lt;p&gt;The theme is available as open source under the terms of the &lt;a href=&quot;http://opensource.org/licenses/MIT&quot;&gt;MIT License&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;credits&quot;&gt;Credits&lt;/h2&gt;
-
-&lt;p&gt;Cobalt was developed by &lt;a href=&quot;https://xtrp.github.io&quot;&gt;Fred Adams&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Cobalt is built on top of the default &lt;a href=&quot;https://jekyll.github.io/minima/&quot;&gt;Minima theme&lt;/a&gt;, which was built by Parker Moore and the minima contributors.&lt;/p&gt;
-
-&lt;p&gt;The SVG icons used in the Cobalt theme can all be found on &lt;a href=&quot;http://iconmonstr.com&quot;&gt;iconmonstr&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Cobalt uses &lt;a href=&quot;http://getskeleton.com&quot;&gt;Skeleton.css&lt;/a&gt;, a responsive CSS boilerplate.&lt;/p&gt;
-
-&lt;p&gt;Cobalt also uses &lt;a href=&quot;https://necolas.github.io/normalize.css/&quot;&gt;normalize.css&lt;/a&gt;, a modern alternative to CSS resets.&lt;/p&gt;</content><author><name>Cobalt Theme</name></author><summary type="html">Cobalt</summary></entry><entry><title type="html">Markdown Elements Demo</title><link href="http://localhost:4000/2018/07/11/markdown-elements-demo.html" rel="alternate" type="text/html" title="Markdown Elements Demo" /><published>2018-07-11T00:00:00+01:00</published><updated>2018-07-11T00:00:00+01:00</updated><id>http://localhost:4000/2018/07/11/markdown-elements-demo</id><content type="html" xml:base="http://localhost:4000/2018/07/11/markdown-elements-demo.html">&lt;p&gt;Text can be &lt;strong&gt;bold&lt;/strong&gt;, &lt;em&gt;italic&lt;/em&gt;, or &lt;del&gt;strikethrough&lt;/del&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-07-11T22:03:40+01:00</updated><id>http://localhost:4000/</id><title type="html">Cobalt Jekyll Theme</title><subtitle>A simple, minimalistic Jekyll theme.
+</subtitle><author><name>Fred Adams</name></author><entry><title type="html">Markdown Elements Demo</title><link href="http://localhost:4000/2018/07/11/markdown-elements-demo.html" rel="alternate" type="text/html" title="Markdown Elements Demo" /><published>2018-07-11T00:00:00+01:00</published><updated>2018-07-11T00:00:00+01:00</updated><id>http://localhost:4000/2018/07/11/markdown-elements-demo</id><content type="html" xml:base="http://localhost:4000/2018/07/11/markdown-elements-demo.html">&lt;p&gt;Text can be &lt;strong&gt;bold&lt;/strong&gt;, &lt;em&gt;italic&lt;/em&gt;, or &lt;del&gt;strikethrough&lt;/del&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;another-page.html&quot;&gt;Link to another page&lt;/a&gt;.&lt;/p&gt;
 
@@ -252,7 +163,96 @@ Contains the &lt;code class=&quot;highlighter-rouge&quot;&gt;main.css&lt;/code&g
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;The final element.
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Cobalt Theme</name></author><summary type="html">Text can be bold, italic, or strikethrough.</summary></entry><entry><title type="html">Another Page</title><link href="http://localhost:4000/2018/07/11/another-page.html" rel="alternate" type="text/html" title="Another Page" /><published>2018-07-11T00:00:00+01:00</published><updated>2018-07-11T00:00:00+01:00</updated><id>http://localhost:4000/2018/07/11/another-page</id><content type="html" xml:base="http://localhost:4000/2018/07/11/another-page.html">&lt;h3 id=&quot;this-is-another-page&quot;&gt;This is another page!&lt;/h3&gt;
 
-&lt;h5 id=&quot;go-back&quot;&gt;&lt;a href=&quot;markdown-elements-demo.html&quot;&gt;Go Back&lt;/a&gt;&lt;/h5&gt;</content><author><name>Cobalt Theme</name></author><summary type="html">This is another page!</summary></entry><entry><title type="html">Welcome To Jekyll</title><link href="http://localhost:4000/2016/05/20/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome To Jekyll" /><published>2016-05-20T00:00:00+01:00</published><updated>2016-05-20T00:00:00+01:00</updated><id>http://localhost:4000/2016/05/20/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/2016/05/20/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+&lt;h5 id=&quot;go-back&quot;&gt;&lt;a href=&quot;markdown-elements-demo.html&quot;&gt;Go Back&lt;/a&gt;&lt;/h5&gt;</content><author><name>Cobalt Theme</name></author><summary type="html">This is another page!</summary></entry><entry><title type="html">Cobalt Theme: README file</title><link href="http://localhost:4000/2018/07/10/readme.html" rel="alternate" type="text/html" title="Cobalt Theme: README file" /><published>2018-07-10T00:00:00+01:00</published><updated>2018-07-10T00:00:00+01:00</updated><id>http://localhost:4000/2018/07/10/readme</id><content type="html" xml:base="http://localhost:4000/2018/07/10/readme.html">&lt;h1 id=&quot;cobalt&quot;&gt;Cobalt&lt;/h1&gt;
+
+&lt;p&gt;&lt;em&gt;Cobalt is a minimalistic, simple Jekyll theme for a blog and personal website.&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://xtrp.github.io/cobalt-jekyll-theme/&quot;&gt;Theme preview&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/screenshot.png&quot; alt=&quot;Cobalt theme preview&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
+
+&lt;p&gt;Download this Github repository.&lt;/p&gt;
+
+&lt;h3 id=&quot;layouts&quot;&gt;Layouts&lt;/h3&gt;
+
+&lt;p&gt;Refers to files within the &lt;code class=&quot;highlighter-rouge&quot;&gt;_layouts&lt;/code&gt; directory, that define the markup for your theme.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;default.html&lt;/code&gt; — The base layout that lays the foundation for subsequent layouts. The derived layouts inject their contents into this file at the line that says &lt;code class=&quot;highlighter-rouge&quot;&gt;{{ content }}&lt;/code&gt; and are linked to this file via &lt;a href=&quot;https://jekyllrb.com/docs/frontmatter/&quot;&gt;FrontMatter&lt;/a&gt; declaration &lt;code class=&quot;highlighter-rouge&quot;&gt;layout: default&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;home.html&lt;/code&gt; — The layout for your landing-page / home-page / index-page. [&lt;a href=&quot;#home-layout&quot;&gt;More Info.&lt;/a&gt;]&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;page.html&lt;/code&gt; — The layout for your documents that contain FrontMatter, but are not posts.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;post.html&lt;/code&gt; — The layout for your posts.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;includes&quot;&gt;Includes&lt;/h3&gt;
+
+&lt;p&gt;Refers to snippets of code within the &lt;code class=&quot;highlighter-rouge&quot;&gt;_includes&lt;/code&gt; directory that can be inserted in multiple layouts (and another include-file as well) within the same theme-gem.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;footer.html&lt;/code&gt; — Defines the site’s footer section.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;google-analytics.html&lt;/code&gt; — Inserts Google Analytics module.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;head.html&lt;/code&gt; — Code-block that defines the &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;head&amp;gt;&amp;lt;/head&amp;gt;&lt;/code&gt; in &lt;em&gt;default&lt;/em&gt; layout.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;header.html&lt;/code&gt; — Defines the site’s main header section.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;nav.html&lt;/code&gt; — Defines the post layouts top bar.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;assets&quot;&gt;Assets&lt;/h3&gt;
+
+&lt;p&gt;Refers to various asset files within the &lt;code class=&quot;highlighter-rouge&quot;&gt;assets&lt;/code&gt; directory.
+Contains the &lt;code class=&quot;highlighter-rouge&quot;&gt;main.css&lt;/code&gt;, the theme’s main stylesheet called by &lt;code class=&quot;highlighter-rouge&quot;&gt;_layouts/default.html&lt;/code&gt; via &lt;code class=&quot;highlighter-rouge&quot;&gt;_includes/head.html&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;This directory can include sub-directories to manage assets of similar type, and will be copied over as is, to the final transformed site directory.&lt;/p&gt;
+
+&lt;h3 id=&quot;plugins&quot;&gt;Plugins&lt;/h3&gt;
+
+&lt;p&gt;Cobalt comes with &lt;a href=&quot;https://github.com/jekyll/jekyll-seo-tag&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll-seo-tag&lt;/code&gt;&lt;/a&gt; plugin preinstalled to make sure your website gets the most useful meta tags. See &lt;a href=&quot;https://github.com/jekyll/jekyll-seo-tag#usage&quot;&gt;usage&lt;/a&gt; to know how to set it up.&lt;/p&gt;
+
+&lt;h3 id=&quot;home-layout&quot;&gt;Home Layout&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;home.html&lt;/code&gt; is a flexible HTML layout for the site’s landing-page / home-page / index-page. &lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;enabling-google-analytics&quot;&gt;Enabling Google Analytics&lt;/h3&gt;
+
+&lt;p&gt;To enable Google Analytics, add the following lines to your Jekyll site:&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;na&quot;&gt;google_analytics&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;UA-NNNNNNNN-N&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;frontmatter-in-posts&quot;&gt;FrontMatter in Posts&lt;/h3&gt;
+
+&lt;p&gt;Posts should have the following variables in their FrontMatter:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;layout&lt;/code&gt; — defines the layout of the page, and should be defined as &lt;code class=&quot;highlighter-rouge&quot;&gt;post&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;read_time&lt;/code&gt; — the amount of time the post should take to read, in minutes.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;author&lt;/code&gt; — the author of the post.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;date&lt;/code&gt; — the date the post was written and published.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;title&lt;/code&gt; — the title of the post.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Optional FrontMatter variables that can be used in posts:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;private&lt;/code&gt; — define as true if you’d like the post or page to not be shown in the post feed in the homepage. Note that private pages will still be accessible if the user knows the URL.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;license&quot;&gt;License&lt;/h2&gt;
+
+&lt;p&gt;The theme is available as open source under the terms of the &lt;a href=&quot;http://opensource.org/licenses/MIT&quot;&gt;MIT License&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;credits&quot;&gt;Credits&lt;/h2&gt;
+
+&lt;p&gt;Cobalt was developed by &lt;a href=&quot;https://xtrp.github.io&quot;&gt;Fred Adams&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Cobalt is built on top of the default &lt;a href=&quot;https://jekyll.github.io/minima/&quot;&gt;Minima theme&lt;/a&gt;, which was built by Parker Moore and the minima contributors.&lt;/p&gt;
+
+&lt;p&gt;The SVG icons used in the Cobalt theme can all be found on &lt;a href=&quot;http://iconmonstr.com&quot;&gt;iconmonstr&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Cobalt uses &lt;a href=&quot;http://getskeleton.com&quot;&gt;Skeleton.css&lt;/a&gt;, a responsive CSS boilerplate.&lt;/p&gt;
+
+&lt;p&gt;Cobalt also uses &lt;a href=&quot;https://necolas.github.io/normalize.css/&quot;&gt;normalize.css&lt;/a&gt;, a modern alternative to CSS resets.&lt;/p&gt;</content><author><name>Cobalt Theme</name></author><summary type="html">Cobalt</summary></entry><entry><title type="html">Welcome To Jekyll</title><link href="http://localhost:4000/2016/05/20/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome To Jekyll" /><published>2016-05-20T00:00:00+01:00</published><updated>2016-05-20T00:00:00+01:00</updated><id>http://localhost:4000/2016/05/20/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/2016/05/20/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
 &lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
 
