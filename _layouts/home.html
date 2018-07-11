@@ -12,6 +12,7 @@ layout: default
   {%- if site.posts.size > 0 -%}
     <section class="post-list">
       {%- for post in site.posts -%}
+      {%- if post.private != true -%}
       <article class="post-list-item">
         {%- assign date_format = "%b %-d, %Y" -%}
         <h3>
@@ -39,6 +40,7 @@ layout: default
         </div>
       </article>
       <hr>
+      {%- endif -%}
       {%- endfor -%}
     </section>
   {% else %}

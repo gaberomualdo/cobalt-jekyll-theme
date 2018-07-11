@@ -60,6 +60,11 @@ Posts should have the following variables in their FrontMatter:
  - `read_time` &mdash; the amount of time the post should take to read, in minutes.
  - `author` &mdash; the author of the post.
  - `date` &mdash; the date the post was written and published.
+ - `title` &mdash; the title of the post.
+
+Optional FrontMatter variables that can be used in posts:
+
+ - `private` &mdash; define as true if you'd like the post or page to not be shown in the post feed in the homepage. Note that private pages will still be accessible if the user knows the URL.
 
 ## License
 
