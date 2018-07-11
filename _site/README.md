@@ -52,8 +52,6 @@ To enable Google Analytics, add the following lines to your Jekyll site:
   google_analytics: UA-NNNNNNNN-N
 ```
 
---
-
 ## License
 
 The theme is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
