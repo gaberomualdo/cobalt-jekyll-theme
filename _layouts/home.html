@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<header>
+  <h1>{{ site.title }}</h1>
+  <p>{{ site.description }}</p>
+</header>
+<hr class="top-separator">
+
+<div class="home">
+  {%- if site.posts.size > 0 -%}
+    <section class="post-list">
+      {%- for post in site.posts -%}
+      <article class="post-list-item">
+        {%- assign date_format = "%b %-d, %Y" -%}
+        <h3>
+          <a href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+        <div class="row">
+          <ul>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20 20h-4v-4h4v4zm-6-10h-4v4h4v-4zm6 0h-4v4h4v-4zm-12 6h-4v4h4v-4zm6 0h-4v4h4v-4zm-6-6h-4v4h4v-4zm16-8v22h-24v-22h3v1c0 1.103.897 2 2 2s2-.897 2-2v-1h10v1c0 1.103.897 2 2 2s2-.897 2-2v-1h3zm-2 6h-20v14h20v-14zm-2-7c0-.552-.447-1-1-1s-1 .448-1 1v2c0 .552.447 1 1 1s1-.448 1-1v-2zm-14 2c0 .552-.447 1-1 1s-1-.448-1-1v-2c0-.552.447-1 1-1s1 .448 1 1v2z"/></svg>
+              {{ post.date | date: "%b %-d, %Y" }}
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M13 12l-.688-4h-.609l-.703 4c-.596.347-1 .984-1 1.723 0 1.104.896 2 2 2s2-.896 2-2c0-.739-.404-1.376-1-1.723zm-1-8c-5.522 0-10 4.477-10 10s4.478 10 10 10 10-4.477 10-10-4.478-10-10-10zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8zm-2-19.819v-2.181h4v2.181c-1.438-.243-2.592-.238-4 0zm9.179 2.226l1.407-1.407 1.414 1.414-1.321 1.321c-.462-.484-.964-.926-1.5-1.328z"/></svg>
+              {%- if post.read_time == 1 -%} ~ {%- endif -%}
+              {{ post.read_time }} min read
+            </li>
+          </ul>
+          <div class="content">
+            <div>{{ post.content | strip_html | truncatewords: 50 }}</div>
+            <a href="{{ post.url | relative_url }}"><p>Read More</p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg></a>
+          </div>
+
+        </div>
+      </article>
+      <hr>
+      {%- endfor -%}
+    </section>
+
+  {%- endif -%}
+
+</div>
+<style>footer {margin-top: 3.5rem;} footer hr {display: none;}</style>

@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<article class="post">
+
+  <header class="post-header">
+    <h1>{{ page.title | escape }}</h1>
+    <p>By {{ page.author }} on {{ page.date | date: "%b %-d, %Y" }}</p>
+  </header>
+  <hr>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+</article>

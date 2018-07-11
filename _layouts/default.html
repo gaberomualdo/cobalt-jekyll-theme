@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+
+    <div class="wrapper">
+
+      {%- if page.post_page != false -%}
+        {%- include nav.html -%}
+      {%- endif -%}
+
+      {{ content }}
+
+      {%- include footer.html -%}
+    </div>
+
+  </body>
+
+</html>
