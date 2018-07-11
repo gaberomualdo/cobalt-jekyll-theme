@@ -1,6 +1,6 @@
 # Cobalt
 
-*Cobalt is a simple, minimalistic Jekyll theme.*.
+*Cobalt is a simple, minimalistic Jekyll theme.*
 
 [Theme preview](https://xtrp.github.io/cobalt-jekyll-theme/)
 
