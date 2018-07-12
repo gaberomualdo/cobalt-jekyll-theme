@@ -6,7 +6,7 @@ description: >
 
 # social links
 email_link: "mailto:someone@example.com"
-github_link: "https://github.com/xtrp/cobalt-jekyll-theme"
+github_link: "https://github.com/xtrp/cobalt-jekyll-theme/"
 stackoverflow_link: "https://stackoverflow.com"
 
 plugins:
